@@ -1,0 +1,40 @@
+package com.shashank.models;
+
+
+import java.sql.Date;
+import java.util.Arrays;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+/**
+ * 
+ */
+@Entity
+//----lombok
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+public class User {
+	@Id
+	private String email;
+	@Column(nullable = false)
+	private String password;
+	@Column(nullable = false)
+	private String name;
+	@Column(length = 10)
+	private String phone;
+	private Date dob;
+	private String gender;
+	@Lob
+	@Column(columnDefinition = "LONGBLOB")
+	private byte[] photo;
+	
+}
