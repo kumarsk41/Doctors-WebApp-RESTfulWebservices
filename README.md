@@ -47,3 +47,13 @@ The frontend (Thymeleaf client) communicates with this backend using RestTemplat
   "doctor_name": "Dr. Sharma",
   "specialization": "Cardiology"
 }
+
+## How to Run
+
+### Backend
+1. Start backend Spring Boot application
+2. Ensure it runs on port 7071
+3. Clone this repo
+4. Open in STS
+5. Run as Spring Boot app
+6. Visit: http://localhost:7071
